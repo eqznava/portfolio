@@ -1,0 +1,179 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.header{
+    display: flex;
+}
+
+.header > img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.header_overlay{
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.90);
+    box-shadow: 0px 0px 10px white;
+    color:white;
+}
+
+.header_overlay h2{
+    width: 300px;
+    margin: 0px;
+    position: relative;
+    top: 35px;
+    left: 100px;
+}
+
+.menu{
+    width: 550px;
+    margin: 0px;
+    position: relative;
+    top: -5px;
+    left: 800px;
+}
+
+.menu ul{
+    display: flex;
+    gap: 45px;
+    width: 500px;
+    list-style: none;
+}
+
+.menu a{
+    text-decoration: none;
+    color: gray;
+    transition: all 300ms;
+}
+
+.menu a:hover{
+    color: white;
+}
+
+.header_overlay-social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80px;
+    height: 270px;
+    position: relative;
+    top: 210px;
+    left: 20px;
+    gap: 20px;
+}
+
+.header_overlay-social > a:hover{
+    animation-name: rotate_icon;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate_icon {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.header_overlay-avatar{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    top: 50px;
+    left: 230px;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+.header_overlay-avatar > img{
+    object-fit: cover;
+    position: relative;
+    bottom: 50px;
+}
+
+.header_overlay-title{
+    display: block;
+    position: relative;
+    bottom: 400px;
+    left: 700px;
+    width: 550px;
+}
+
+.header_overlay-titleOne{
+    margin: 0px;
+    font-size: 5em;
+    letter-spacing: 5px;
+    animation: blink 5s infinite linear;
+}
+
+.header_overlay-titleTwo{
+    font-size: 3.5em;
+    margin: 0px;
+    letter-spacing: 20px;
+    font-weight: lighter;
+    animation: blink 5s infinite linear;
+}
+
+@keyframes blink {
+    0%{
+        color:#37bcf9;
+    }
+    25%{
+        color:blueviolet;
+    }
+    50%{
+        color:whitesmoke;
+    }
+    75%{
+        color:gold;
+    }
+    100%{
+        color:#37bcf9;
+    }
+}
+
+.header_overlay-subtitle{
+    display: block;
+    position: relative;
+    bottom: 270px;
+    left: 700px;
+    width: 550px;
+}
+
+.header_overlay-subtitleOne{
+    font-size: 2.5em;
+    margin: 0px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    color: #444;
+    text-shadow: -1px -1px 1px white,
+                            1px 1px 1px white,
+                            -1px -1px 3px white,
+                            1px 1px 3px white;
+
+}
+
+.main{
+    background-image: url('../img/dark-grey-tile.png');
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.aboutme{
+    width: 80%;
+    height: 500px;
+    position: relative;
+    top: 200px;
+    box-shadow: 0px 0px 20px #555;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
