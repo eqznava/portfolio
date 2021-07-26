@@ -1,7 +1,66 @@
+/* A N I M A T I O N S */
+
+@keyframes blink_text{
+    0%{
+        color:#37bcf9;
+    }
+    25%{
+        color:blueviolet;
+    }
+    50%{
+        color:whitesmoke;
+    }
+    75%{
+        color:gold;
+    }
+    100%{
+        color:#37bcf9;
+    }
+}
+
+@keyframes blink_bars{
+    0%{
+        background-color:#37bcf9;
+    }
+    25%{
+        background-color:blueviolet;
+    }
+    50%{
+        background-color:whitesmoke;
+    }
+    75%{
+        background-color:gold;
+    }
+    100%{
+        background-color:#37bcf9;
+    }
+}
+
+@keyframes rotate_icon {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes blink_nums {
+    0%{
+        color: white;
+    }
+    100%{
+        color:black;
+    }
+}
+
+/*E N D  A N I M A T I O N S*/
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
     padding: 0px;
+    overflow-x:hidden;
 }
 
 .header{
@@ -36,7 +95,7 @@ body{
     margin: 0px;
     position: relative;
     top: -5px;
-    left: 800px;
+    left: 965px;
 }
 
 .menu ul{
@@ -74,15 +133,6 @@ body{
     animation-timing-function: linear;
 }
 
-@keyframes rotate_icon {
-    from{
-        transform: rotate(0deg);
-    }
-    to{
-        transform: rotate(360deg);
-    }
-}
-
 .header_overlay-avatar{
     width: 300px;
     height: 300px;
@@ -110,7 +160,7 @@ body{
     margin: 0px;
     font-size: 5em;
     letter-spacing: 5px;
-    animation: blink 5s infinite linear;
+    animation: blink_text 5s infinite linear;
 }
 
 .header_overlay-titleTwo{
@@ -118,25 +168,7 @@ body{
     margin: 0px;
     letter-spacing: 20px;
     font-weight: lighter;
-    animation: blink 5s infinite linear;
-}
-
-@keyframes blink {
-    0%{
-        color:#37bcf9;
-    }
-    25%{
-        color:blueviolet;
-    }
-    50%{
-        color:whitesmoke;
-    }
-    75%{
-        color:gold;
-    }
-    100%{
-        color:#37bcf9;
-    }
+    animation: blink_text 5s infinite linear;
 }
 
 .header_overlay-subtitle{
@@ -168,7 +200,7 @@ body{
     justify-content: center;
 }
 
-.aboutme{
+.mySkills{
     width: 80%;
     height: 500px;
     position: relative;
@@ -176,4 +208,110 @@ body{
     box-shadow: 0px 0px 20px #555;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.5);
+}
+
+.mySkills h3{
+    width: 350px;
+    color: white;
+    position: relative;
+    left: 50px;
+    top: 35px;
+    margin: 0px;
+}
+
+.mySkills h2{
+    font-weight: lighter;
+    width: 100px;
+    color: white;
+    position: relative;
+    margin: 0px;
+    top: 10px;
+    left: 1000px;
+    animation: blink_text 5s linear infinite;
+}
+
+.mySkills p{
+    position: relative;
+    margin: 0px;
+    color: white;
+    top: 100px;
+    left: 130px;
+    font-size: 1.2em;
+}
+
+.progress_bar-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    height: 260px;
+    margin: 0px;
+    position: relative;
+    top: 130px;
+    left: 130px;
+}
+
+.progress_bar{
+    width: 90%;
+    height: 30px;
+    border: 2px solid white;
+    color: white;
+    border-radius: 5px;
+    margin-left: 30px;
+    padding: 0px;
+    display: flex;
+}
+
+.progress_bar-inner{
+    display: flex;
+    align-items: center;
+    animation: blink_bars 5s linear infinite;
+    margin: 0px;
+}
+
+.progress_bar-inner h4{
+    letter-spacing: 2px;
+    animation: blink_nums 5s ease infinite;
+}
+
+.html{
+    width: 100%;
+    justify-content: end;
+}
+
+.css{
+    width: 100%;
+    justify-content: end;
+}
+
+.javascript{
+    width: 50%;
+    justify-content: end;
+}
+
+.phyton{
+    width: 70%;
+    justify-content: end;
+}
+
+.bootstrap{
+    width: 85%;
+    justify-content: end;
+}
+
+.expertise{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    width: 10%;
+    height: 260px;
+    margin: 0px;
+    position: relative;
+    bottom: 130px;
+    left: 1000px;
+}
+
+.expertise h4{
+    margin: 0px;
 }
