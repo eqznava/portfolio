@@ -360,6 +360,12 @@ body{
     height: 300px;
     display: flex;
     width: 40%;
+    opacity: 0.7;
+}
+
+.practices:hover,
+.work:hover{
+    opacity: 1;
 }
 
 .practices{
