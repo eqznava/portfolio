@@ -195,22 +195,24 @@ body{
 .main{
     background-image: url('../img/dark-grey-tile.png');
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .mySkills{
+    margin:200px 0px;
     width: 80%;
     height: 500px;
-    position: relative;
-    top: 200px;
     box-shadow: 0px 0px 20px #555;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.mySkills h3{
+.mySkills h3,
+.work_evidence h3,
+.contact h3{
     width: 350px;
     color: white;
     position: relative;
@@ -219,7 +221,9 @@ body{
     margin: 0px;
 }
 
-.mySkills h2{
+.mySkills h2,
+.work_evidence h2,
+.contact h2{
     font-weight: lighter;
     width: 100px;
     color: white;
@@ -228,6 +232,16 @@ body{
     top: 10px;
     left: 1000px;
     animation: blink_text 5s linear infinite;
+}
+
+.work_evidence h2{
+    left: 875px;
+    width: 210px;
+}
+
+.contact h2{
+    left: 965px;
+    width: 125px;
 }
 
 .mySkills p{
@@ -314,4 +328,68 @@ body{
 
 .expertise h4{
     margin: 0px;
+}
+
+.work_evidence{
+    width: 80%;
+    height: 500px;
+    margin-bottom: 200px;
+    box-shadow: 0px 0px 20px #555;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.work_evidence-container{
+    position: relative;
+    top: 50px;
+    margin: 0px auto;
+    width: 90%;
+    height: 350px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.practices,
+.work{
+    border: 1px solid white;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 10px;
+    align-items: center;
+    height: 300px;
+    display: flex;
+    width: 40%;
+}
+
+.practices{
+    background-color: #37bcf9;
+}
+
+.work{
+    background-color: palevioletred;
+}
+
+.practices h4,
+.work h4{
+    font-size: 3em;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.contact{
+    width: 80%;
+    height: 500px;
+    margin-bottom: 200px;
+    box-shadow: 0px 0px 20px #555;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+footer{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
 }
