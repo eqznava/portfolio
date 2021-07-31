@@ -1,0 +1,123 @@
+@media screen and (max-width: 1024px){
+    /* H E A D E R */
+    .header_overlay h2{
+        left: 50px;
+    }
+
+    .menu{
+        left: 590px;
+    }
+
+    .menu a {
+        color: white;
+    }
+
+    .header_overlay-social{
+        width: 65px;
+        top: 150px;
+    }
+
+    .header_overlay-avatar{
+        width: 250px;
+        height: 250px;
+        left: 180px;
+    }
+
+    .header_overlay-avatar > img{
+        left: -35px;
+    }
+
+    .header_overlay-title{
+        left: 530px;
+        width: 430px;
+    }
+
+    .header_overlay-titleOne{
+        font-size: 4em;
+    }
+
+    .header_overlay-titleTwo {
+        font-size: 2.5em;
+    }
+
+    .header_overlay-subtitle{
+        bottom: 180px;
+        left: 410px;
+        text-align: end;
+    }
+
+    .header_overlay-subtitleOne{
+        font-size: 2em;
+        letter-spacing: 2px;
+    }
+
+    /* E N D  H E A D E R */
+
+    /* S K I L L S */
+
+    .mySkills h3, .work_evidence h3, .contact h3 {
+        width: 320px;
+    }
+
+    .mySkills h2, .work_evidence h2, .contact h2 {
+        left: 700px;
+    }
+
+    .mySkills p {
+        top: 70px;
+        left: 75px;
+    }
+
+    .progress_bar-container {
+        left: 50px;
+    }
+
+    .expertise{
+        left: 650px;
+    }
+
+    /* E N D  S K I L L S */
+
+    /* W O R K  E V I D E N C E */
+
+    .work_evidence > h2 {
+        left: 590px;
+    }
+
+    .practices h4, .work h4 {
+        font-size: 2em;
+    }
+    /* E N D  W O R K  E V I D E N C E */
+
+    /* C O N T A C T  M E */
+
+    .contact > h2 {
+        left: 670px;
+    }
+
+    .cont_icons{
+        position: relative;
+        left: -10px;
+        top: -10px;
+
+    }
+
+    .info_icon h4 {
+        font-size: 1.1em;
+        width: 220px;
+        text-align: center;
+    }
+
+    .form_name, .form_email {
+        width: 95%;
+    }
+
+    .form_message {
+        width: 95%;
+    }
+    /* E N D  C O N T A C T  M E */
+}
+
+@media screen and (max-width: 768px){
+    
+}
