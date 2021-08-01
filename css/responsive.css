@@ -345,6 +345,7 @@
     .header_overlay-title {
         left: 20px;
         font-size: 0.5em;
+        width:285px;
     }
 
     .header_overlay-titleOne {
@@ -365,7 +366,7 @@
 
     .header_overlay-social {
         left: 0px;
-        width: 320px;
+        width: 100%;
         gap: 0px;
     }
 
