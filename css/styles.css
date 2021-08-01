@@ -438,7 +438,8 @@ body{
     font-size: 1.5em;
     width: 325px;
     opacity: 0.8;
-    border-bottom: 2px solid white;
+    position: relative;
+    top: 10px;
 }
 
 
@@ -495,4 +496,8 @@ footer{
     justify-content: center;
     background-color: black;
     color: white;
+}
+
+.footer_h2{
+    animation: blink_text 5s infinite linear;
 }
