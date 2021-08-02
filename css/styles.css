@@ -127,6 +127,11 @@ body{
     gap: 20px;
 }
 
+.header_overlay-social a img{
+    width: 50px;
+    height: 50px;
+}
+
 .header_overlay-social > a:hover{
     animation-name: rotate_icon;
     animation-duration: 2s;
