@@ -340,6 +340,71 @@
 
 }
 
+@media screen and (max-width: 375px) {
+    .header_overlay h2 {
+        font-size: 1.3em;
+        width: 356px;
+        left: 12px;
+    }
+
+    .header_overlay-title {
+        left: 34px;
+        font-size: 0.6em;
+        width: 312px;
+    }
+
+    .header_overlay-titleOne {
+        letter-spacing: 10px;
+    }
+
+    .header_overlay-avatar {
+        left: 60px;
+    }
+
+    .header_overlay-social {
+        width: 350px;
+        left: 12px;
+    }
+
+    .header_overlay-subtitle {
+        left: 9px;
+    }
+
+    .mySkills h3, .work_evidence h3, .contact h3 {
+        left: 17px;
+    }
+
+    .mySkills h2, .work_evidence h2, .contact h2 {
+        left: 105px;
+    }
+
+    .mySkills p {
+        left: 23px;
+    }
+
+    .progress_bar-container {
+        left: 1px;
+        width: 50%;
+    }
+
+    .expertise {
+        left: 190px;
+    }
+
+    .work_evidence > h2 {
+        left: 27px;
+    }
+
+    .contact > h2 {
+        left: 85px;
+    }
+
+    footer h2 {
+        font-size: 0.7em;
+    }
+
+}
+
 @media screen and (max-width: 320px){
     .header_overlay h2 {
         left: 15px;
