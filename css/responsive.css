@@ -405,6 +405,100 @@
 
 }
 
+@media screen and (max-width: 360px) {
+    .header_overlay h2 {
+        font-size: 1em;
+        width: 297px;
+        left: 35px;
+    }
+
+    .header_overlay-title {
+        left: 39px;
+        font-size: 0.5em;
+        width: 295px;
+        bottom: 215px;
+    }
+
+    .header_overlay-titleOne {
+        letter-spacing: 12px;
+        width: 295px;
+    }
+
+    .header_overlay-avatar {
+        left: 89px;
+        top: 100px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .header_overlay-avatar > img {
+        left: 0px;
+        top: 0px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .header_overlay-subtitle {
+        width: 270px;
+        left: 45px;
+        font-size: 0.55em;
+        bottom: -60px;
+        top: 130px;
+    }
+
+    .header_overlay-social {
+        left: 0px;
+        width: 100%;
+        gap: 0px;
+    }
+
+    .mySkills > h2{
+        left: 90px;
+    }
+
+    .mySkills h3, .work_evidence h3, .contact h3 {
+        left: 33px;
+        font-size: 0.8em;
+        width: 216px;
+    }
+
+    .mySkills p {
+        left: 40px;
+        width: 200px;
+        text-align: center;
+    }
+
+    .progress_bar {
+        margin-left: 5px;
+    }
+
+    .progress_bar-container {
+        left: 10px;
+    }
+
+    .expertise {
+        left: 180px;
+        font-size: 0.7em;
+        width: 30%;
+    }
+
+    .contact > h2 {
+        left: 75px;
+        width: 140px;
+    }
+
+    .work_evidence > h2 {
+        left: 50px;
+        width: 190px;
+        letter-spacing: 2px;
+    }
+
+    footer h2 {
+        font-size: 0.55em;
+    }
+
+}
+
 @media screen and (max-width: 320px){
     .header_overlay h2 {
         left: 15px;
