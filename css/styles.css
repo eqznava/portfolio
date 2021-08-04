@@ -289,34 +289,35 @@ body{
     margin: 0px;
 }
 
-.progress_bar-inner h4{
+.progress_bar-inner > h4{
     letter-spacing: 2px;
     animation: blink_nums 5s ease infinite;
+    margin: 0px;
 }
 
 .html{
     width: 100%;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .css{
     width: 100%;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .javascript{
     width: 50%;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .phyton{
     width: 70%;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .bootstrap{
     width: 85%;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .expertise{
