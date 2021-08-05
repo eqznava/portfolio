@@ -1,0 +1,284 @@
+/* A N I M A T I O N S */
+
+@keyframes blink_text{
+    0%{
+        color:#37bcf9;
+    }
+    25%{
+        color:blueviolet;
+    }
+    50%{
+        color:whitesmoke;
+    }
+    75%{
+        color:gold;
+    }
+    100%{
+        color:#37bcf9;
+    }
+}
+
+@keyframes blink_bars{
+    0%{
+        background-color:#37bcf9;
+    }
+    25%{
+        background-color:blueviolet;
+    }
+    50%{
+        background-color:whitesmoke;
+    }
+    75%{
+        background-color:gold;
+    }
+    100%{
+        background-color:#37bcf9;
+    }
+}
+
+@keyframes rotate_icon {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes blink_nums {
+    0%{
+        color: white;
+    }
+    100%{
+        color:black;
+    }
+}
+
+@keyframes jumps {
+    
+}
+
+/*E N D  A N I M A T I O N S*/
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.header{
+    display: flex;
+}
+
+.header > img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.header_overlay{
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.90);
+    box-shadow: 0px 0px 10px white;
+    color:white;
+}
+
+.header_overlay h2{
+    width: 300px;
+    margin: 0px;
+    position: relative;
+    top: 35px;
+    left: 100px;
+}
+
+.menu{
+    width: 400px;
+    margin: 0px;
+    position: relative;
+    top: -5px;
+    left: 965px;
+}
+
+.menu ul{
+    display: flex;
+    gap: 45px;
+    width: 400px;
+    list-style: none;
+}
+
+.menu a{
+    text-decoration: none;
+    color: gray;
+    transition: all 300ms;
+}
+
+.menu a:hover{
+    color: white;
+}
+
+.header_overlay-social{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 270px;
+    position: relative;
+    top: 210px;
+    left: 20px;
+    gap: 20px;
+}
+
+.header_overlay-social a img{
+    width: 50px;
+    height: 50px;
+}
+
+.header_overlay-social > a:hover{
+    animation-name: rotate_icon;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+.header_overlay-p{
+    font-size: 5em;
+    display: block;
+    position: relative;
+    bottom: 100px;
+    left: 700px;
+    width: 100px;
+    text-align: center;
+}
+
+.header_overlay-r{
+    font-size: 5em;
+    display: block;
+    position: relative;
+    bottom: 245px;
+    left: 735px;
+    width: 100px;
+    text-align: center;
+}
+
+.header_overlay-a{
+    font-size: 5em;
+    display: block;
+    position: relative;
+    bottom: 391px;
+    left: 779px;
+    width: 100px;
+    text-align: center;
+}
+
+.header_overlay-c{
+    font-size: 5em;
+    display: block;
+    position: relative;
+    bottom: 536px;
+    left: 825px;
+    width: 100px;
+    text-align: center;
+}
+
+.header_overlay-t{
+    font-size: 5em;
+    display: block;
+    position: relative;
+    bottom: 683px;
+    left: 870px;
+    width: 100px;
+    text-align: center;
+}
+
+.header_overlay-i{
+    font-size: 5em;
+    display: block;
+    position: relative;
+    bottom: 829px;
+    left: 903px;
+    width: 100px;
+    text-align: center;
+}
+
+.header_overlay-cc{
+    font-size: 5em;
+    display: block;
+    position: relative;
+    bottom: 973px;
+    left: 932px;
+    width: 100px;
+    text-align: center;
+}
+
+.header_overlay-e{
+    font-size: 5em;
+    display: block;
+    position: relative;
+    bottom: 1119px;
+    left: 980px;
+    width: 100px;
+    text-align: center;
+}
+
+.header_overlay-s{
+    font-size: 5em;
+    display: block;
+    position: relative;
+    bottom: 1264px;
+    left: 1030px;
+    width: 100px;
+    text-align: center;
+}
+
+.header_overlay-subtitle{
+    display: block;
+    position: relative;
+    bottom: -115px;
+    left: 700px;
+    width: 550px;
+}
+
+.header_overlay-subtitleOne{
+    font-size: 2.5em;
+    margin: 0px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    color: #444;
+    text-shadow: -1px -1px 1px white,
+                            1px 1px 1px white,
+                            -1px -1px 3px white,
+                            1px 1px 3px white;
+
+}
+
+.main{
+    background-image: url('../img/dark-grey-tile.png');
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.myPractices{
+    margin:200px 0px;
+    width: 80%;
+    height: 500px;
+    box-shadow: 0px 0px 20px #555;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+footer{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+
+.footer_h2{
+    animation: blink_text 5s infinite linear;
+}
