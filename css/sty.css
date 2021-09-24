@@ -1,0 +1,369 @@
+/* A N I M A T I O N S */
+
+@keyframes blink_text{
+    0%{
+        color:#37bcf9;
+    }
+    25%{
+        color:blueviolet;
+    }
+    50%{
+        color:whitesmoke;
+    }
+    75%{
+        color:gold;
+    }
+    100%{
+        color:#37bcf9;
+    }
+}
+
+@keyframes blink_bars{
+    0%{
+        background-color:#37bcf9;
+    }
+    25%{
+        background-color:blueviolet;
+    }
+    50%{
+        background-color:whitesmoke;
+    }
+    75%{
+        background-color:gold;
+    }
+    100%{
+        background-color:#37bcf9;
+    }
+}
+
+@keyframes rotate_icon {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes blink_nums {
+    0%{
+        color: white;
+    }
+    100%{
+        color:black;
+    }
+}
+
+/*E N D  A N I M A T I O N S*/
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+.flexContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px;
+    box-sizing: content-box;
+}
+
+.header{
+    width: 100%;
+    box-sizing: content-box;
+}
+
+.navbar{
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.title{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.menu{
+    width: 35%;
+}
+
+.menu > ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    list-style: none;
+    margin: auto 0px;
+}
+
+.menu > ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.overlapContainer{
+    background-image: url("../img/background_header.webp");
+    width: 100%;
+    height: 670px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.overlap{
+    width: 100%;
+    height: 670px;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 0px 10px white;
+}
+
+.headerMain{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left{
+    width: 48%;
+    display: flex;
+    padding-left:15px ;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social{
+    height: 40%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.social a:hover{
+    animation-name: rotate_icon;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+.avatar{
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    width: 300px;
+    height: 300px;
+    position: relative;
+    top: 205px;
+    right: 160px;
+}
+
+.right{
+    width: 48%;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-direction: column;
+    color: white;
+    gap: 200px;
+}
+
+.subTitleContainer{
+    width: 80%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 90px;
+}
+
+.subTitleOne,
+.subTitleTwo{
+    width: 100%;
+    text-align: center;
+}
+
+.subTitleOne > h2{
+    margin: 0px;
+    margin-left: 50px;
+    font-size: 5em;
+    letter-spacing: 60px;
+    animation: blink_text 5s infinite linear;
+}
+
+.subTitleTwo > h2{
+    font-size: 3.5em;
+    margin: 0px;
+    letter-spacing: 20px;
+    font-weight: lighter;
+    animation: blink_text 5s infinite linear;
+}
+
+.speciality{
+    width: 80%
+}
+
+.speciality > h3{
+    font-size: 2.5em;
+    margin: 0px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    color: #444;
+    text-shadow: -1px -1px 1px white,
+                            1px 1px 1px white,
+                            -1px -1px 3px white,
+                            1px 1px 3px white;
+}
+
+.main{
+    background-image: url("../img/dark-grey-tile.png");
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px;
+    gap: 150px;
+}
+
+.card{
+    width: 80%;
+    height: 500px;
+    box-shadow: 0px 0px 20px #555;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    color: white;
+}
+
+.cardHeader{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardMain{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.progressBarHtml,
+.progressBarCss,
+.progressBarJavaScript,
+.progressBarPython,
+.progressBarBootstrap,
+.progressBarCommand{
+    width: 60%;
+    height: 30px;
+    color: white;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: blink_bars 5s linear infinite;
+}
+
+.barContainer{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 100px;
+}
+
+.bar{
+    border: 2px solid white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    width: 100%;
+}
+
+.html{
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.css{
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.javascript{
+    width: 50%;
+    justify-content: flex-end;
+}
+
+.python{
+    width: 70%;
+    justify-content: flex-end;
+}
+
+.bootstrap{
+    width: 85%;
+    justify-content: flex-end;
+}
+
+.command{
+    width: 65%;
+    justify-content: flex-end;
+}
+
+.titleSkill{
+    width: 20%;
+    display: flex;
+    justify-content: end;
+}
+
+.buttonsContainer{
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 20px #555;
+    border-radius: 10px;
+    height: 95%;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+
+.practices,
+.work{
+    border: 1px solid white;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 10px;
+    align-items: center;
+    height: 300px;
+    display: flex;
+    width: 40%;
+    opacity: 0.7;
+}
+
+.practices:hover,
+.work:hover{
+    opacity: 1;
+}
+
+.practices{
+    background-color: #37bcf9;
+}
+
+.work{
+    background-color: palevioletred;
+}
+
+.practices h4,
+.work h4{
+    font-size: 3em;
+    color: white;
+    letter-spacing: 2px;
+}
