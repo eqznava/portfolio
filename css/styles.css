@@ -1,3 +1,46 @@
+/*Fonts*/
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?wk2dxv');
+    src:  url('../fonts/icomoon.eot?wk2dxv#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?wk2dxv') format('truetype'),
+        url('../fonts/icomoon.woff?wk2dxv') format('woff'),
+        url('../fonts/icomoon.svg?wk2dxv#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak-as: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Enable Ligatures ================ */
+    letter-spacing: 0;
+    -webkit-font-feature-settings: "liga";
+    -moz-font-feature-settings: "liga=1";
+    -moz-font-feature-settings: "liga";
+    -ms-font-feature-settings: "liga" 1;
+    font-feature-settings: "liga";
+    -webkit-font-variant-ligatures: discretionary-ligatures;
+    font-variant-ligatures: discretionary-ligatures;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+    content: "\e9bd";
+}
+
+.icon-menu{
+    font-size: 2em;
+}
+
 /* A N I M A T I O N S */
 
 @keyframes blink_text{
@@ -504,6 +547,21 @@ body::-webkit-scrollbar-thumb{
     display: none;
 }
 
+.burger-button{
+    display: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.4);
+    line-height: 40px;
+    text-align: center;
+    position: fixed;
+    z-index: 4;
+    left: 5px;
+    top:5px;
+    color: white;
+}
+
 @media screen and (max-width:1337px){
     .speciality {
         width: 85%;
@@ -778,6 +836,10 @@ body::-webkit-scrollbar-thumb{
         margin-top: 45px;
     }
 
+    .titleSkill {
+        width: 30%;
+    }
+
     .buttonsContainer {
         flex-direction: column;
         align-items: center;
@@ -829,6 +891,18 @@ body::-webkit-scrollbar-thumb{
         padding-bottom: 50px;
     }
 
+    .cardHeader > h3 {
+        font-size: 1em;
+    }
+
+    .cardHeader > h4 {
+        font-size: 1.1em;
+    }
+
+    .leftInfo > h4 {
+        font-size: 0.65em;
+    }
+
     .footer{
         height: 60px;
         align-items: center;
@@ -836,5 +910,180 @@ body::-webkit-scrollbar-thumb{
 
     .footer > h2 {
         font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width:717px) {
+    .cardMain > h5 {
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (max-width:660px) {
+    .title > h1 {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width:636px) {
+    .cardHeader > h4 {
+        font-size: 1em;
+    }
+
+    .cardHeader > h3 {
+        font-size: 0.75em;
+    }
+
+    .leftContact {
+        height: 40%;
+        flex-direction: column;
+    }
+
+    .leftInfo {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .leftInfo > h4 {
+        font-size: 0.75em;
+        width: 32%;
+        margin: 0px;
+    }
+
+    .footer > h2 {
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (max-width:610px) {
+    .titleSkill {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .title > h1{
+        letter-spacing: 5px;
+    }
+
+    .barContainer {
+        gap: 70px;
+    }
+}
+
+@media screen and (max-width:530px) {
+    .cardHeader{
+        flex-direction:column;
+        align-items: center;
+    }
+
+    .footer{
+        flex-direction: column;
+    }
+
+    .footerSocial{
+        width:70%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .title > h1 {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width:466px) {
+    .leftInfo > h4 {
+        width: 100%;
+        display:contents;
+    }
+
+    .leftContact {
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .title > h1 {
+        font-size: 0.9em;
+        letter-spacing: 3px;
+    }
+
+    .barContainer {
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .title{
+        justify-content: center;
+        margin-top:50px
+    }
+
+    .burger-button{
+        display: block;
+        background-color: transparent;
+        position: fixed;
+        left: 25px;
+        top: 0px;
+    }
+
+    .menu{
+        height: auto;
+        background: rgba(0, 0, 0, 0.85);
+        position: fixed;
+        z-index: 3;
+        top: 0;
+        left: -100vw;
+        width: 100vw;
+        bottom: 0;
+        display: flex;
+        transition: 1.5s;
+    }
+
+    .menu.is-active{
+        left: 0;
+    }
+
+    .menu > ul {
+        gap: 30px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0px;
+    }
+
+    .barContainer {
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .title > h1 {
+        font-size: 0.75em;
+        letter-spacing: 2px;
+    }
+
+    .subTitleOne > h2 {
+        font-size: 2em;
+        margin-left: 53px;
+        letter-spacing: 59px;
+    }
+
+    .subTitleTwo > h2 {
+        font-size: 1em;
+    }
+
+    .speciality > h3{
+        letter-spacing: 10px;
+    }
+
+    .titleSkill{
+        font-size: 0.8em;
+    }
+
+    .footer > h2 {
+        font-size: 0.6em;
     }
 }
