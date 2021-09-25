@@ -62,6 +62,17 @@ body{
     margin: 0px;
 }
 
+body::-webkit-scrollbar{
+    width: 15px;
+    background-color: white;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: #222;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
 .flexContainer{
     display: flex;
     flex-wrap: wrap;
@@ -92,6 +103,10 @@ body{
     color: white;
 }
 
+.title > h1{
+    margin-left: 20px;
+}
+
 .menu{
     width: 35%;
 }
@@ -100,6 +115,7 @@ body{
     display: flex;
     justify-content: space-evenly;
     width: 70%;
+    gap: 60px;
     list-style: none;
     margin: auto 0px;
 }
@@ -181,9 +197,10 @@ body{
 .subTitleContainer{
     width: 80%;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
     margin-top: 90px;
+    gap:30px;
 }
 
 .subTitleOne,
@@ -481,4 +498,343 @@ body{
 
 .footer_h2{
     animation: blink_text 5s infinite linear;
+}
+
+.footerSocial{
+    display: none;
+}
+
+@media screen and (max-width:1337px){
+    .speciality {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width:1260px){
+    .title > h1{
+        font-size: 1.2em;
+    }
+
+    .subTitleTwo > h2{
+        font-size: 3.1em;
+    }
+
+    .subTitleOne > h2{
+        font-size: 4.2em;
+    }
+
+    .speciality {
+        width: 90%;
+    }
+
+    .speciality > h3 {
+        font-size: 2.1em;
+    }
+}
+
+@media screen and (max-width:1175px){
+    .avatar {
+        top: 190px;
+        right: 100px;
+    }
+}
+
+@media screen and (max-width:1120px){
+    .avatar {
+        top: 187px;
+        right: 95px;
+    }
+}
+
+@media screen and (max-width:1024px){
+    .menu > ul {
+        width: 50%;
+    }
+
+    .subTitleContainer {
+        width: 100%;
+    }
+
+    .subTitleTwo > h2 {
+        font-size: 2.8em;
+    }
+
+    .subTitleOne > h2 {
+        font-size: 3.5em;
+    }
+}
+
+@media screen and (max-width:1009px){
+    .overlapContainer {
+        height: 590px;
+    }
+
+    .overlap {
+        height: 590px;
+    }
+
+    .title > h1 {
+        font-size: 1em;
+    }
+
+    .avatar {
+        width: 250px;
+        height: 250px;
+        top: 175px;
+    }
+
+    .avatar > img{
+        position: relative;
+        width: 100%;
+    }
+
+    .subTitleOne > h2 {
+        font-size: 3em;
+    }
+
+    .subTitleTwo > h2 {
+        font-size: 2.4em;
+    }
+
+    .speciality > h3 {
+        font-size: 1.8em;
+    }
+
+    .practices h4,
+    .work h4 {
+        font-size: 2.1em;
+    }
+
+    .practices, .work {
+        height: 260px;
+        width: 35%;
+    }
+
+    .cardHeader > h3 {
+        font-size: 1.1em;
+    }
+
+    .cardHeader > h4 {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width:900px){
+    .menu > ul{
+        gap: 40px;
+    }
+
+    .leftInfo {
+        gap: 25px;
+    }
+}
+
+@media screen and (max-width:878px){
+    .subTitleTwo > h2{
+        font-size: 2.1em;
+    }
+
+    .speciality > h3 {
+        font-size: 1.5em;
+    }
+
+}
+
+@media screen and (max-width:840px){
+    .title {
+        width: 40%;
+    }
+
+    .avatar{
+        top: 175px;
+        right: 40px;
+    }
+
+    .practices h4,
+    .work h4 {
+        font-size: 1.7em;
+    }
+
+    .leftInfo {
+        align-items: center;
+    }
+
+    .leftInfo > img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width:816px) {
+    .menu > ul {
+        gap: 30px;
+    }
+
+    .subTitleOne > h2 {
+        font-size: 2.7em;
+    }
+
+    .subTitleTwo > h2 {
+        font-size: 1.8em;
+    }
+
+    .footer > h2{
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .headerMain {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5px;
+    }
+
+    .navbar{
+        flex-direction: column;
+    }
+
+    .title{
+        width: 100%;
+    }
+
+    .title > h1 {
+        font-size: 1.5em;
+        letter-spacing: 8px;
+    }
+
+    .menu{
+        width: 100%;
+    }
+
+    .menu > ul {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .overlapContainer {
+        height: 700px;
+    }
+
+    .overlap{
+        height: 700px;
+    }
+
+    .left{
+        width: 100%;
+        height: 100%;
+        padding: 0px;
+        flex-direction: column;
+        justify-content: center;
+        gap: 60px;
+    }
+
+    .social{
+        display: none;
+    }
+
+    .footerSocial{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+        width: 35%;
+        height: 100%;
+    }
+
+    .footerSocial > a > img{
+        width: 30px;
+    }
+
+    .avatar{
+        position:initial;
+    }
+
+    .right{
+        justify-content: flex-start;
+        width: 100%;
+        height: 100%;
+        gap: 10px;
+    }
+
+    .subTitleContainer {
+        width: 100%;
+        margin-top: 40px;
+        gap: 20px;
+    }
+
+    .subTitleOne > h2 {
+        margin-left: 60px;
+    }
+
+    .subTitleTwo > h2{
+        margin-left: 15px;
+    }
+
+    .speciality {
+        width: 100%;
+        text-align: center;
+        margin-top: 45px;
+    }
+
+    .buttonsContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+
+    .practices,
+    .work {
+        width: 90%;
+    }
+
+    .cardMainContact {
+        flex-direction: column;
+    }
+
+    .leftContact{
+        width: 100%;
+        height: 15%;
+        flex-direction: row;
+    }
+
+    .leftInfo{
+        width: 30%;
+        gap: 10px;
+    }
+
+    .leftInfo > h4{
+        font-size: 0.75em;
+    }
+
+    .leftInfo > img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .rightContact {
+        width: 100%;
+    }
+
+    .footer > h2 {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width:733px){
+    .main{
+        padding-bottom: 50px;
+    }
+
+    .footer{
+        height: 60px;
+        align-items: center;
+    }
+
+    .footer > h2 {
+        font-size: 0.8em;
+    }
 }
