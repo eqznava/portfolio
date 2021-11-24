@@ -100,10 +100,6 @@
 
 /*E N D  A N I M A T I O N S*/
 
-.swal-button {
-    src: url('http://127.0.0.1:5500/index.html#contact');
-}
-
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
@@ -179,7 +175,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .overlapContainer {
-    background-image: url("../img/background_header.webp");
+    background-image: url("../img/background_header.png");
     width: 100%;
     height: 670px;
     background-repeat: no-repeat;
