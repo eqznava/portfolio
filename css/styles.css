@@ -336,7 +336,7 @@ body::-webkit-scrollbar-thumb {
 .progressBarHtml,
 .progressBarCss,
 .progressBarJavaScript,
-.progressBarPython,
+.progressBarGit,
 .progressBarBootstrap,
 .progressBarCommand {
     width: 60%;
@@ -381,8 +381,8 @@ body::-webkit-scrollbar-thumb {
     justify-content: flex-end;
 }
 
-.python {
-    width: 35%;
+.git {
+    width: 100%;
     justify-content: flex-end;
 }
 
