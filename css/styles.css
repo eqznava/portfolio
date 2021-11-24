@@ -283,6 +283,7 @@ body::-webkit-scrollbar-thumb {
 
 .main {
     background-image: url("../img/dark-grey-tile.png");
+    box-shadow: 0px 0px 5px white inset;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -376,22 +377,22 @@ body::-webkit-scrollbar-thumb {
 }
 
 .javascript {
-    width: 50%;
+    width: 90%;
     justify-content: flex-end;
 }
 
 .python {
-    width: 70%;
+    width: 35%;
     justify-content: flex-end;
 }
 
 .bootstrap {
-    width: 85%;
+    width: 40%;
     justify-content: flex-end;
 }
 
 .command {
-    width: 65%;
+    width: 100%;
     justify-content: flex-end;
 }
 
